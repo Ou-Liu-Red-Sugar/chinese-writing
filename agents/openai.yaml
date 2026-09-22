@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文写作"
+  short_description: "从材料与句法形成近成稿草图，完成教材讲解、精简研究报告及防御性措辞处理"
+  default_prompt: "使用 $chinese-writing，根据当前材料和读者先形成第0版思想安排、第1版段落与标点骨架，经实际修订验收后再填充正文；按任务需要安排 Chat 协作与评测。"

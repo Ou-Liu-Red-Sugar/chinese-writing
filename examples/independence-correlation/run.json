@@ -1,0 +1,109 @@
+{
+  "task": "使用v2.3新写词条：独立性与不相关",
+  "date": "2026-09-23",
+  "scope": "有限取值随机变量的定义、推导与三点反例；独立样稿，不改主页或方法",
+  "budget": "预计15分钟；一次第1版专项反馈及必要修订，填充后全文核读",
+  "state": "delivered_sample",
+  "skill_version": "2.3.0",
+  "artifacts": {
+    "v0": "sketch-v0.md",
+    "v1": "sketch-v1.md",
+    "structure_review": "review-structure-v1.md",
+    "language_review": "review-language-v1.md",
+    "v2": "sketch-v2.md",
+    "revision": "revision-v2.md",
+    "language_review_v2": "review-language-v2.md",
+    "accepted_skeleton": "final-skeleton.md",
+    "acceptance": "acceptance.json",
+    "fill_contract": "fill-contract.json",
+    "fills": "fills.json",
+    "article": "article.md"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_class07-prep-b.pdf",
+      "title": "Orloff and Bloom, Covariance and Correlation, Class7, MIT18.05 Spring2022",
+      "scope": "第1页定义与性质、2.3例2、第3节相关系数；主Agent已取得原文，数学Agent另核页面"
+    },
+    {
+      "id": "S2",
+      "url": "https://ocw.mit.edu/courses/2-854-introduction-to-manufacturing-systems-fall-2016/pages/lecture-notes/notes-on-covariance/",
+      "scope": "Notes on Covariance全文；只采用联合概率分解的正确推导，不照抄其首个乘积事件和式"
+    }
+  ],
+  "events": [
+    {
+      "stage": "sketch_v0",
+      "actor": "协调者",
+      "artifact": "sketch-v0.md",
+      "status": "思想与体现安排已保存，暂无第1版或正文"
+    },
+    {
+      "stage": "sketch_v1",
+      "at": "2026-09-23T00:53:07.325785+08:00",
+      "actor": "协调者",
+      "artifact": "sketch-v1.md",
+      "status": "已按句子组成方法写入实际连接与标点，12处内容尚未展开，待专项反馈"
+    },
+    {
+      "stage": "sketch_v2",
+      "at": "2026-09-23T00:58:10.955759+08:00",
+      "actor": "协调者",
+      "input": [
+        "review-structure-v1.md",
+        "review-language-v1.md"
+      ],
+      "artifact": "sketch-v2.md",
+      "status": "按真实反馈固定公式、概率比较与抵消结论的句群接口；9处局部内容尚未填"
+    },
+    {
+      "stage": "final_sketch",
+      "at": "2026-09-23T01:00:42.377344+08:00",
+      "actor": "协调者",
+      "status": "已实际核读原始反馈、处置与第2版；当前尚无正文，现另行下达填充任务"
+    },
+    {
+      "stage": "filled",
+      "at": "2026-09-23T01:01:01.107093+08:00",
+      "actor": "协调者",
+      "status": "只替换九处局部文字，固定部分保持；现在读回全文"
+    },
+    {
+      "stage": "reviewed",
+      "at": "2026-09-23T01:01:44.347321+08:00",
+      "actor": "协调者",
+      "artifact": "article.md",
+      "status": "实际全文读回，固定内容对应；九处填充的主语、条件和比较范围与骨架相同"
+    }
+  ],
+  "user_approval": null,
+  "math_review": {
+    "agent": "数学核对者",
+    "read_scope": "MIT Reading7b实际页面p1、3、5及Notes on Covariance全文",
+    "result": "有限独立/协方差推导与三点反例数值成立；联合和式必须用P(X=x,Y=y)，不照抄源中P(XY=xy)首行"
+  },
+  "calculation": {
+    "EX": "0",
+    "EY": "2/3",
+    "EXY": "0",
+    "covariance": "0",
+    "variance_X": "2/3",
+    "variance_Y": "2/9",
+    "centered_products": [
+      "-1/3",
+      "0",
+      "1/3"
+    ],
+    "P_Y0": "1/3",
+    "P_Y0_given_X0": "1"
+  },
+  "final_checks": {
+    "fixed_text_preserved": true,
+    "finite_scope_preserved": true,
+    "positive_probability_and_variance_conditions_preserved": true,
+    "source_adaptation_identified": true,
+    "user_style_approval": null,
+    "new_reader_quiz": "未执行；本轮实际使用中文专项与数学核对"
+  }
+}
