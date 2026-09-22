@@ -2,7 +2,7 @@
 name: chinese-writing
 description: 为中文教材、notebook、技术说明和研究报告组织材料、编排详略、形成近成稿草图并完成正文；也用于中文改稿、精简研究结论、处理防御性措辞和写作校准。支持 Codex 主持、Chat 协助的分工。普通事实问答或聊天不启动完整文章流程，文学创作按用户指定声音另定。
 metadata:
-  version: "2.4.0"
+  version: "2.5.0"
   repository: "https://github.com/Ou-Liu-Red-Sugar/chinese-writing"
 ---
 
@@ -14,13 +14,13 @@ metadata:
 
 先读本次任务的用户要求和项目约定，确定是教材讲解、说明文章、研究报告还是参考记录。明确对象、读者已有认识、文章需完成的事情、材料与改动范围、时间或调用预算。用户只要求讨论、理解材料或审读时，停在相应职责，不自行写文件或启动批量生产。
 
-新写或实质改写读 [写作 workflow](references/workflow.md)。第1版生成前，按 [写作方法调用与专项检查](references/specialist-checks.md) 实际使用章节、内容详略和 [句子组成](references/sentence-construction.md) 方法，把句内分句、前后句的起承转合、关联词和公式引入口写进骨架；后续按专项反馈修正，不能留给正文临时润色。精简报告或处理谨慎表述，再读 [限定与防御性措辞](references/qualification.md)。只改一处文字时，连同必要前后文使用相关方法。
+新写或实质改写读 [写作 workflow](references/workflow.md)。第1版生成前，按 [写作方法调用与专项检查](references/specialist-checks.md) 实际使用章节、内容详略和 [句子组成](references/sentence-construction.md) 方法，把承接对象、必要解释、起承转合、关联词和公式引入口写进骨架。句间缺口按关系表达、中间内容或材料依据分别处理，不能只补“但是”“于是”便认定接续成立。精简报告或处理谨慎表述，再读 [限定与防御性措辞](references/qualification.md)。只改一处文字时，连同必要前后文使用相关方法。
 
 | 工作 | 实际采用的资源 |
 |---|---|
 | 教材、notebook、技术说明 | workflow；编排与句法；[草图模板](assets/article-sketch.md) |
 | 第1版生成及其后的骨架修订 | [方法调用与专项检查](references/specialist-checks.md)：第1版按方法作安排，后续逐专项核具体问题 |
-| 复句、句群、起承转合及教材语气 | [句子组成](references/sentence-construction.md)；[用户组句示范](assets/sentence-calibration.md) |
+| 复句、句群、起承转合及教材语气 | [句子组成](references/sentence-construction.md)；[用户示范与衔接反例](assets/sentence-calibration.md) |
 | 研究报告、局部更新、决策摘要 | workflow；限定与防御性措辞；[精简报告模板](assets/concise-report.md)；调用项目的研究内容要求 |
 | Chat 参与材料阅读、草图、复核或局部填充 | [Chat 协作](references/chat-collaboration.md)；[交接模板](assets/chat-handoff.md) |
 | 写作校准、版本对照、用户改稿学习 | [Benchmarks](references/benchmarks.md)；[公开题库](assets/benchmark-cases.json)；[评测报告](assets/benchmark-report.md) |
@@ -29,7 +29,7 @@ metadata:
 ## 执行中的约束
 
 - 第0版允许流程图或表格，需说明思想之间的关系以及怎样让读者理解。第1版以真实衔接句、具体段落任务、带语义占位的标点骨架体现文章安排；中间句子尚未写出不构成不合格。后续围绕这份骨架修改，不把修改等同于逐轮填满正文。
-- 最终草图确定标题、句序、段落、承接、关键措辞和标点。必要的公式、数字、条件及来源位置已定，空缺的内容和语法作用已明确。不能仍把一整段解释或衔接决定交给正文阶段，也不得通过复制全文绕过前序。
+- 最终草图确定标题、句序、段落、承接、关键措辞和标点。必要的解释、公式、数字、条件及来源位置已定，空缺的内容和语法作用已明确。审读须沿实际前后句核承接，主题相同、连词齐全和段落职责说明不能替代这项检查；尚需审读者补讲的承重理由应回到草图处理。
 - 按 workflow 第2–4节分阶段执行。首次草图任务明确到第0版止；进入第1版后，审读针对这一版的段落、衔接与标点关系，反馈处理后由Lead核对。正文任务在最终骨架验收后另行下达，不能在一次生成里自报所有阶段完成。
 - 草图修改中解决语义、详略、顺序和句法问题。验收时核的是当前实际文字及其反馈依据，正文填充再保持固定部分；发现承重错误，撤销该版验收并保留旧稿，回到相应草图修订。
 - 教材把定义、实例、推导与理解难点展开。报告让结果、依据和影响采用的条件直接相接。参考记录以查询和复原为目的。文体由任务确定，不把所有文章变成一套课程。
