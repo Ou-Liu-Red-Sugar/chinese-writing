@@ -1,30 +1,30 @@
 ---
 name: chinese-writing
-description: 为中文教材、notebook、技术说明和研究报告组织材料、编排详略、形成近成稿草图并完成正文；也用于中文改稿、精简研究结论、处理防御性措辞和写作校准。支持 Codex 主持、Chat 协助的分工。普通事实问答或聊天不启动完整文章流程，文学创作按用户指定声音另定。
+description: 为中文教材、notebook、技术说明和研究报告组织材料、编排详略、形成近成稿草图并完成正文；也用于中文改稿、句式与标点调整、精简研究结论、处理防御性措辞和写作校准。支持 Codex 主持、Chat 协助的分工。普通事实问答或聊天不启动完整文章流程，文学创作按用户指定声音另定。
 metadata:
-  version: "2.5.0"
+  version: "2.6.0"
   repository: "https://github.com/Ou-Liu-Red-Sugar/chinese-writing"
 ---
 
 # 中文写作
 
-以读者需要理解的具体内容组织文章。第0版用图、表或文字安排思想及其呈现方式；第1版才落实到每段写什么、衔接句怎样写，以及用标点确定中间内容的关系，中间句子暂不展开。后续版本修正第1版，将骨架彻底建好，再填充正文。修改次数取决于实际问题，“四五轮”不表示固定次数。真实草图、针对相应版本的反馈和实际修订先于验收，一次写出的全文不能自行标为最终草图。
+安排读者依次理解什么，用材料、次序和详略把重要关系讲清。第0版用图、表或文字安排思想及其呈现方式；第1版才落实到每段写什么、衔接句怎样写，以及用标点确定中间内容的关系，中间句子暂不展开。后续版本修正第1版，将骨架彻底建好，再填充正文。修改次数取决于实际问题，“四五轮”不表示固定次数。真实草图、针对相应版本的反馈和实际修订先于验收，一次写出的全文不能自行标为最终草图。
 
 ## 开始
 
 先读本次任务的用户要求和项目约定，确定是教材讲解、说明文章、研究报告还是参考记录。明确对象、读者已有认识、文章需完成的事情、材料与改动范围、时间或调用预算。用户只要求讨论、理解材料或审读时，停在相应职责，不自行写文件或启动批量生产。
 
-新写或实质改写读 [写作 workflow](references/workflow.md)。第1版生成前，按 [写作方法调用与专项检查](references/specialist-checks.md) 实际使用章节、内容详略和 [句子组成](references/sentence-construction.md) 方法，把承接对象、必要解释、起承转合、关联词和公式引入口写进骨架。句间缺口按关系表达、中间内容或材料依据分别处理，不能只补“但是”“于是”便认定接续成立。精简报告或处理谨慎表述，再读 [限定与防御性措辞](references/qualification.md)。只改一处文字时，连同必要前后文使用相关方法。
+新写或实质改写读 [写作 workflow](references/workflow.md)。用 [篇章编排](references/composition.md) 安排中心、材料、理解次序与详略；第1版生成前再按 [方法调用与专项检查](references/specialist-checks.md) 落实章节和 [句子组成](references/sentence-construction.md)。组句先定主干与承担者，再安排承接、必要解释和标点。连接词只在实际需要处使用，后面不自动加逗号；具体内容已能自然接续时直接往下写。语态与语序依本句重点选择。精简报告或处理谨慎表述，再读 [限定与防御性措辞](references/qualification.md)。局部改句连同前后文使用相关方法，不启动整篇生产流程。
 
 | 工作 | 实际采用的资源 |
 |---|---|
 | 教材、notebook、技术说明 | workflow；编排与句法；[草图模板](assets/article-sketch.md) |
 | 第1版生成及其后的骨架修订 | [方法调用与专项检查](references/specialist-checks.md)：第1版按方法作安排，后续逐专项核具体问题 |
-| 复句、句群、起承转合及教材语气 | [句子组成](references/sentence-construction.md)；[用户示范与衔接反例](assets/sentence-calibration.md) |
+| 句子主干、语序、复句、标点及教材语气 | [句子组成](references/sentence-construction.md)；[用户示范与改句对照](assets/sentence-calibration.md) |
 | 研究报告、局部更新、决策摘要 | workflow；限定与防御性措辞；[精简报告模板](assets/concise-report.md)；调用项目的研究内容要求 |
 | Chat 参与材料阅读、草图、复核或局部填充 | [Chat 协作](references/chat-collaboration.md)；[交接模板](assets/chat-handoff.md) |
 | 写作校准、版本对照、用户改稿学习 | [Benchmarks](references/benchmarks.md)；[公开题库](assets/benchmark-cases.json)；[评测报告](assets/benchmark-report.md) |
-| 查看原则的原始依据 | [文献与采用范围](references/literature.md)，以及限定文献在 qualification 中的实际读取记录 |
+| 查看原则的原始依据与实际阅读范围 | [文献与采用范围](references/literature.md) |
 
 ## 执行中的约束
 
@@ -43,4 +43,4 @@ metadata:
 
 方法或模板修改前保存实际旧版，保留正确内容并重构受影响职责。用户要求暂停即停。上下文恢复后重新读当前用户要求、workflow 当前阶段及之后部分；项目要求全文重读时照办，并重新取得正在使用的草图和材料。
 
-本skill的方法来自实际写作校准及所列文献。默认表达偏好见 [写作原则](docs/style-guide.md)，调用任务的明确要求优先；完整研究、公开发布和外部通信权限仍由当前任务确定。
+本skill的方法来自实际写作校准及主要文献的集中研读，通用采用已整合在上述方法中。日常任务先使用这些方法；遇到新争点、精确引文或适用范围问题再回原文核实，不每次从零检索同一原则。阅读范围与原文、综合转用及用户偏好的区别见 [文献记录](references/literature.md)。默认表达偏好见 [写作原则](docs/style-guide.md)，调用任务的明确要求优先；完整研究、公开发布和外部通信权限仍由当前任务确定。
