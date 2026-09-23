@@ -2,7 +2,7 @@
 
 面向中文教材、技术说明、notebook 和研究报告的写作 skill。先安排思想，再建立段落与句群骨架；经过具体审读和修订，最后填充成稿。
 
-重点是让句子、分句和段落之间的关系在草图中就成立：前句留下什么，后句怎样承接，中间需要哪一步解释，哪些地方详写，以及标点怎样组织尚未展开的内容。现行版本 **2.5.0** 将关系表达、中间内容与材料依据的缺口分开处理，避免只补关联词便认定衔接完成。
+现行版本 **2.6.0** 将主要参考文献的集中研读结果纳入方法：先安排读者依次理解什么，再用材料、次序和详略突出重要关系，并在草图中写定主干、语序与标点。连接词在需要说明关系时使用，内容已经接得上就直接往下写；普通连接词后不自动加逗号。真实阅读范围、来源局限和方法采用见 [文献记录](references/literature.md)。
 
 ## 开始使用
 
@@ -53,7 +53,7 @@ git clone https://github.com/Ou-Liu-Red-Sugar/chinese-writing.git (Join-Path $sk
 | 需要做的事 | 入口 |
 |---|---|
 | 组织篇章、章节、材料及详略 | [编排与句法](references/composition.md) |
-| 写复句、句群及起承转合 | [句子组成](references/sentence-construction.md) |
+| 组织主干、语序、复句及实际停顿 | [句子组成](references/sentence-construction.md) |
 | 在第1版调用方法，并安排后续专项 | [方法调用与专项检查](references/specialist-checks.md) |
 | 删去防御性表态，保留必要条件 | [限定与防御性措辞](references/qualification.md) |
 | 写精简研究报告 | [报告模板](assets/concise-report.md) |
@@ -68,11 +68,11 @@ git clone https://github.com/Ou-Liu-Red-Sugar/chinese-writing.git (Join-Path $sk
 
 [独立性与不相关](examples/independence-correlation/article.md)展示一次实际写作过程，包括思想安排、段落骨架、专项原始反馈、修订和最终填充。阅读入口及文件对应见[示例说明](examples/independence-correlation/README.md)。该数学教学示例引用并改编了外部课程材料，目录内单独标明授权。
 
-[句子组织校准材料](assets/sentence-calibration.md)保留创作者的局部改稿示范及采用分析，展示连续设定怎样完成教学动作，也记录 Blog 中漏写转折、补了关联词仍缺解释的失败片段及草图改法。
+[句子组织校准材料](assets/sentence-calibration.md)保留创作者的组句示范，以及 Blog 中漏写转折、解释跳步、过度前置对象和连接词后习惯停顿的失败片段。原话、历史改法和当前采用分析分别标明，便于对照。
 
 ## Benchmarks
 
-[公开题库](assets/benchmark-cases.json)有 **13道题、39道理解题**，涵盖融资引入、随后文改变句序、主语与修饰范围、标点辖域、详略、数学推导、报告精简、证据身份、必要限定和参考结构。新增题目检查改变办法的理由、检查到修改的动作联系，以及材料不足时怎样保留真实关系。
+[公开题库](assets/benchmark-cases.json)有 **15道题、45道理解题**，涵盖句序、主干与承担者、标点辖域、详略、数学推导、报告精简、证据身份、必要限定和参考结构。既检查缺少解释，也检查为求通顺补造理由；局部改句题另核主动表达、合理被动、连接词连读及必要的逗号边界。
 
 每题分为 `writer_packet` 与 `reviewer_key`：作者只取得题目材料，审读者在交稿后取得判别依据，独立读者只取得成稿与问题。流程遵守、文本质量、读者任务表现和用户认可分别记录。已公开或已见的材料不称为未见测试；仓库没有发布跨模型排名或经过统计验证的通过阈值。使用方式见[校准方法](references/benchmarks.md)和[结果模板](assets/benchmark-report.md)。
 
