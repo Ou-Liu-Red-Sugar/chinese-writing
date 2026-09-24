@@ -2,7 +2,7 @@
 name: chinese-writing
 description: 为中文教材、notebook、技术说明和研究报告组织材料、编排详略、形成近成稿草图并完成正文；也用于中文改稿、句式与标点调整、精简研究结论、处理防御性措辞和写作校准。支持 Codex 主持、Chat 协助的分工。普通事实问答或聊天不启动完整文章流程，文学创作按用户指定声音另定。
 metadata:
-  version: "2.10.1"
+  version: "2.12.0"
   repository: "https://github.com/Ou-Liu-Red-Sugar/chinese-writing"
 ---
 
@@ -16,7 +16,7 @@ metadata:
 
 资料工作分[取材与深挖](references/workflow.md#取材与深挖)。取材服务第0版和第1版草图，允许粗读概述、摘要、必要定义与短片段，找到可表现题意的关系和例子；够安排主线与呈现就停止，不提前逐表取数、校口径或核算。第1版正式交出并通过阶段接收后，再按草图需要深挖资料。早期用概要及需求占位，不预填未经核实的结论；委派他人也沿用这一深度边界。
 
-新写或实质改写读 [写作 workflow](references/workflow.md)。用 [篇章编排](references/composition.md) 安排全篇；第0版选择入口时实际使用[从标题组织开头](references/openings.md)，先把题意、读者已有认识与第一项材料接起来。第1版生成前再按 [方法调用与专项检查](references/specialist-checks.md) 落实章节和 [句子组成](references/sentence-construction.md)。组句先定主干与承担者，再安排承接、必要解释和标点。连接词按语义、语气和阅读节奏选择，让转折、递进和承接自然展开；既检查漏接和生硬，也检查机械堆叠，不能因删后仍能理解就一律删除。连接词后不自动加逗号。精简报告或处理谨慎表述，再读 [限定与防御性措辞](references/qualification.md)。局部开篇改稿调用开篇方法并连同后文处理，不启动整篇生产流程；其他局部改句读取对应方法。
+新写或实质改写读 [写作 workflow](references/workflow.md)。用 [篇章编排](references/composition.md) 安排全篇；第0版选择入口时实际使用[从标题组织开头](references/openings.md)，先把题意、读者已有认识与第一项材料接起来。第1版生成前再按 [方法调用与专项检查](references/specialist-checks.md) 落实章节和 [句子组成](references/sentence-construction.md)。组句先定主干与承担者，再按[句群重组方法](references/sentence-construction.md#从分句关系重组句群)核相邻信息的关系、前句留下的阅读期待及后句怎样承接，安排句序、层级、措辞和标点。留意“首先、会、就、还、已经”等小词承担的顺序、情态和进展；不能因事实仍能辨认就删去其作用。[常用衔接表达](references/sentence-construction.md#常用衔接表达)用于把已确定的关系说自然，连读时既补足生硬处，也删除重复提示。精简报告或处理谨慎表述，再读 [限定与防御性措辞](references/qualification.md)。局部开篇改稿调用开篇方法并连同后文处理，不启动整篇生产流程；其他局部改句读取对应方法。
 
 | 工作 | 实际采用的资源 |
 |---|---|
