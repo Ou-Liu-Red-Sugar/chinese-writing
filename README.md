@@ -2,7 +2,9 @@
 
 面向中文教材、技术说明、notebook 和研究报告的写作 skill。先安排思想，再建立段落与句群骨架；经过具体审读和修订，最后填充成稿。
 
-现行版本 **2.12.4** 将[作者引导](references/sentence-construction.md#6-教材语气与作者引导)的使用尺度并回[完整讲解与适度从容](references/sentence-construction.md#完整讲解与适度从容)：连读整段，既保留自然承接与共同视点，也允许内容直接展开。重构了2.12.3多处“主动引导”的要求，保留笔记口吻，并减少对讲述进度的重复提示。用户反馈、历史示范与本次修订分别记录在[校准材料](assets/sentence-calibration.md#七学习笔记的共同主语与讲述关系)，不以词频或未运行的测试证明效果。
+现行版本 **2.13.0** 加入[真实样文的标点与句群校准](references/punctuation-profiles.md)：固定五篇中文文章的版本、正文范围和统计口径，保存初次频率测量及连续段细读；用实际句群解释数字，再在新材料中试写、审读和修订。统计辅助定位，不按符号数量判定文风，也不将这五篇当作中文总体的最佳比例。
+
+[作者引导](references/sentence-construction.md#6-教材语气与作者引导)继续与衔接词一起沿[完整讲解与适度从容](references/sentence-construction.md#完整讲解与适度从容)取舍，保留自然承接与共同视点，也允许内容直接展开。用户反馈、历史示范与修订分别记录在[校准材料](assets/sentence-calibration.md#七学习笔记的共同主语与讲述关系)。
 
 [Chat 协作](references/chat-collaboration.md)由 Codex 通过网页粘贴、上传和回收材料，不依赖 C2C。GitHub 链接按明确版本交付，并核对 Chat 实际读取的入口和方法范围。
 

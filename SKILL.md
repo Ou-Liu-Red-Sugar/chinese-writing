@@ -2,7 +2,7 @@
 name: chinese-writing
 description: 为中文教材、notebook、技术说明和研究报告组织材料、编排详略、形成近成稿草图并完成正文；也用于中文改稿、句式与标点调整、精简研究结论、处理防御性措辞和写作校准。支持 Codex 主持、Chat 协助的分工。普通事实问答或聊天不启动完整文章流程，文学创作按用户指定声音另定。
 metadata:
-  version: "2.12.4"
+  version: "2.13.0"
   repository: "https://github.com/Ou-Liu-Red-Sugar/chinese-writing"
 ---
 
@@ -26,6 +26,7 @@ metadata:
 | 研究报告、局部更新、决策摘要 | workflow；限定与防御性措辞；[精简报告模板](assets/concise-report.md)；调用项目的研究内容要求 |
 | Chat 参与材料阅读、草图、复核或局部填充 | [Chat 协作](references/chat-collaboration.md)；[交接模板](assets/chat-handoff.md) |
 | 写作校准、版本对照、用户改稿学习 | [Benchmarks](references/benchmarks.md)；[公开题库](assets/benchmark-cases.json)；[评测报告](assets/benchmark-report.md) |
+| 用真实中文文章校准标点与文风 | [样文、统计口径与句群细读](references/punctuation-profiles.md)：先选相近正文，用分布定位，再按实际关系修改 |
 | 查看原则的原始依据与实际阅读范围 | [文献与采用范围](references/literature.md) |
 
 ## 执行中的约束
