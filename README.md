@@ -2,7 +2,9 @@
 
 面向中文教材、技术说明、notebook 和研究报告的写作 skill。先安排思想，再建立段落与句群骨架；经过具体审读和修订，最后填充成稿。
 
-现行版本 **2.12.1** 将[常用衔接表达](references/sentence-construction.md#常用衔接表达)整理为按关系选择的候选，包括“如果／假如／要是／若”等常见说法；替换同时照顾语义、搭配与语气，重复设定也可以通过重组句群处理。中间说明写实或骨架修订后，沿[标点方法](references/sentence-construction.md#7-标点与第1版的交付)重新核顿号、分号和句界，不把早期占位的停顿直接冻结成稿。
+现行版本 **2.12.2** 将 [Chat 协作](references/chat-collaboration.md)统一为 Codex 通过网页粘贴、上传和回收材料，不依赖 C2C。GitHub 链接按明确版本交付，并核对 Chat 实际读取的入口和方法范围。
+
+[常用衔接表达](references/sentence-construction.md#常用衔接表达)按关系提供候选，包括“如果／假如／要是／若”等常见说法；替换同时照顾语义、搭配与语气，重复设定也可以通过重组句群处理。中间说明写实或骨架修订后，沿[标点方法](references/sentence-construction.md#7-标点与第1版的交付)重新核顿号、分号和句界，不把早期占位的停顿直接冻结成稿。
 
 [句群重组方法](references/sentence-construction.md#从分句关系重组句群)继续从信息关系和前句留下的阅读期待出发，安排后句、句式和停顿，补足小词承担的情态、动作进展与语气，并通过整段连读把握[完整讲解与适度从容](references/sentence-construction.md#完整讲解与适度从容)。资料工作分为[取材与深挖](references/workflow.md#取材与深挖)：取材服务第0版和第1版草图，第1版正式交出并接收后，再按草图需要深挖原件、数据、条件和计算。
 
