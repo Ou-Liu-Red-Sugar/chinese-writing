@@ -171,6 +171,14 @@ CCL 2014，[学会原文](https://cips-cl.org/static/anthology/CCL-2014/CCL-14-0
 
 §3.3说明“根据、或者、表明、证明”等须按语境和命题作用判别；本项目据此将词表用作定位工具。§4.3表明词项识别的一致性有限，§5明确限制范围尚待标注。该文服务信息检测与语料构建，不是写作评分标准；本项目定位限定范围、保持摘录条件的办法属于编辑设计，不能称已由此文验证。含限制词也不等于整句或整段的事实均不可靠。
 
+## 技术文档格式
+
+### T1　阮一峰《中文技术文档的写作规范》
+
+[原始仓库](https://github.com/ruanyf/document-style-guide)，公共领域。2026-09-26读取仓库 README 及其链接的[标题](https://github.com/ruanyf/document-style-guide/blob/master/docs/title.md)、[文本](https://github.com/ruanyf/document-style-guide/blob/master/docs/text.md)、[段落](https://github.com/ruanyf/document-style-guide/blob/master/docs/paragraph.md)、[数值](https://github.com/ruanyf/document-style-guide/blob/master/docs/number.md)、[标点](https://github.com/ruanyf/document-style-guide/blob/master/docs/marks.md)、[文档体系](https://github.com/ruanyf/document-style-guide/blob/master/docs/structure.md)和[参考链接](https://github.com/ruanyf/document-style-guide/blob/master/docs/reference.md)。这是作者维护的写作指南，不作为国家标准或项目约定的替代。
+
+采用标题层级与命名检查、中英混排的一致性、数字变化的基准辨认、代词指向及第三方材料的出处标注，集中转用于[技术文档成稿校对](technical-document-style.md)。原文的固定句长和段落行数、简单句及主动语态的普遍优先、四级标题上限、软件手册目录以及文件名禁用中文，受文体和项目条件限制，不设为本 skill 的统一验收阈值。标点若需精确判断，以 N1 所载标准及实际句法为依据；代码与路径的原样保留来自 U1 的用户要求，不归于此来源。
+
 ## 使用这些来源
 
 书目提供回查入口，方法正文决定当前任务怎样使用。引用作品中的历史判断、文学虚构或逻辑例说时保持其身份；新增事实、数学关系及研究结论仍沿相应领域的取证要求。章节中的被引文献不因随章读到引述而登记为整部已读。

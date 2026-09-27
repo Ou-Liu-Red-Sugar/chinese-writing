@@ -2,7 +2,7 @@
 name: chinese-writing
 description: 为中文教材、notebook、技术说明和研究报告组织材料、编排详略、形成近成稿草图并完成正文；也用于中文改稿、句式与标点调整、精简研究结论、处理防御性措辞和写作校准。支持 Codex 主持、Chat 协助的分工。普通事实问答或聊天不启动完整文章流程，文学创作按用户指定声音另定。
 metadata:
-  version: "2.13.1"
+  version: "2.13.3"
   repository: "https://github.com/Ou-Liu-Red-Sugar/chinese-writing"
 ---
 
@@ -20,9 +20,9 @@ metadata:
 
 | 工作 | 实际采用的资源 |
 |---|---|
-| 教材、notebook、技术说明 | workflow；编排与句法；[草图模板](assets/article-sketch.md) |
+| 教材、notebook、技术说明 | workflow；编排与句法；[草图模板](assets/article-sketch.md)。技术文档定稿或局部排版时再用[成稿校对](references/technical-document-style.md)核标题、术语、混排、数字及来源 |
 | 第1版生成及其后的骨架修订 | [方法调用与专项检查](references/specialist-checks.md)：第1版按方法作安排，后续由文字审读与专业审查分别核具体问题 |
-| 句子主干、语序、复句、标点及教材语气 | [句子组成](references/sentence-construction.md)；[用户示范与改句对照](assets/sentence-calibration.md) |
+| 句子主干、语序、复句、标点及教材语气 | [句子组成](references/sentence-construction.md)，其中[伪承接检查](references/sentence-construction.md#承接关系与伪承接)核关系是否有据，[搭配核对](references/sentence-construction.md#搭配核对)核主干与共用成分；[用户示范与改句对照](assets/sentence-calibration.md) |
 | 研究报告、局部更新、决策摘要 | workflow；限定与防御性措辞；[精简报告模板](assets/concise-report.md)；调用项目的研究内容要求 |
 | Chat 参与材料阅读、草图、复核或局部填充 | [Chat 协作](references/chat-collaboration.md)；[交接模板](assets/chat-handoff.md) |
 | 写作校准、版本对照、用户改稿学习 | [Benchmarks](references/benchmarks.md)；[公开题库](assets/benchmark-cases.json)；[评测报告](assets/benchmark-report.md) |
