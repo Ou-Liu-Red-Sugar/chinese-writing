@@ -26,13 +26,27 @@
 
 ## 开始使用
 
-在支持本地 skills 的 Codex 中，将本仓库放到 skills 目录下的 `chinese-writing` 文件夹，然后调用：
+安装好 Node.js（当前 `skills` CLI 要求 22.20.0 或更高版本，含 npm / npx）和 Git 后，在终端运行：
 
-```text
-使用 $chinese-writing，写一篇面向已有基本概率知识读者的中文词条。
-先保存第0版思想安排，再形成第1版段落与句群骨架；
-按专项反馈修订后生成正文，并保留实际草图、审读和修改入口。
+```sh
+npx skills add Ou-Liu-Red-Sugar/chinese-writing
 ```
+
+按提示选择写作助手和安装范围。仓库根目录的 [SKILL.md](SKILL.md) 就是安装入口，参考方法、模板和示例会随 skill 一起安装，无需逐个下载。命令与选项见 [skills CLI 文档](https://github.com/vercel-labs/skills#install-a-skill)。
+
+要直接安装到 Codex 的全局 skills 目录，运行：
+
+```sh
+npx skills add Ou-Liu-Red-Sugar/chinese-writing --skill chinese-writing --agent codex --global
+```
+
+去掉 `--global` 即安装到当前项目。只查看可安装的 skill 而不安装，可运行：
+
+```sh
+npx skills add Ou-Liu-Red-Sugar/chinese-writing --list
+```
+
+也可以用 Git 手动安装到 Codex 的 skills 目录：
 
 macOS / Linux：
 
@@ -55,6 +69,14 @@ git clone https://github.com/Ou-Liu-Red-Sugar/chinese-writing.git (Join-Path $sk
 ```
 
 目标目录已经存在时，先保存原有修改，再按自己的安装方式更新。`git clone` 不会覆盖现有目录。其他写作助手也可以直接读取 [SKILL.md](SKILL.md) 和所需参考文件；本仓库不包含模型服务或 Chat 连接程序。
+
+安装后，在 Codex 中调用：
+
+```text
+使用 $chinese-writing，写一篇面向已有基本概率知识读者的中文词条。
+先保存第0版思想安排，再形成第1版段落与句群骨架；
+按专项反馈修订后生成正文，并保留实际草图、审读和修改入口。
+```
 
 ## 写作流程
 
@@ -105,7 +127,7 @@ git clone https://github.com/Ou-Liu-Red-Sugar/chinese-writing.git (Join-Path $sk
 python tools/validate.py
 ```
 
-检查覆盖 skill 元数据、本地链接、题库结构和可能误带的本机路径/凭证形态；它不判断文章是否写得好。GitHub Actions 在推送和 pull request 时运行同一检查。修改方法或增加案例时，保留可重建的具体依据和真实测试身份，见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+检查覆盖 skill 元数据、本地链接、题库结构和可能误带的本机路径/凭证形态；它不判断文章是否写得好。GitHub Actions 在推送和 pull request 时运行同一检查，并用 `skills` CLI 将当前仓库安装到临时项目，再检查安装后的文件与引用。修改方法或增加案例时，保留可重建的具体依据和真实测试身份，见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 授权
 

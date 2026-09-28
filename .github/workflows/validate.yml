@@ -18,3 +18,13 @@ jobs:
           python-version: '3.12'
       - name: Check structure, links, cases and publication hygiene
         run: python tools/validate.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install skill in a temporary project and validate installed resources
+        shell: bash
+        run: |
+          install_dir="$(mktemp -d)"
+          cd "$install_dir"
+          npx --yes skills@1.7.0 add "$GITHUB_WORKSPACE" --skill chinese-writing --agent codex --copy --yes
+          python "$GITHUB_WORKSPACE/tools/validate.py" "$install_dir/.agents/skills/chinese-writing"
